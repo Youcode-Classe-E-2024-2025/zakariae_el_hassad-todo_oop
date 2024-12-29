@@ -1,0 +1,177 @@
+/* Task Overlay Styles */
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.buttons-container button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.buttons-container button:hover {
+    opacity: 0.9;
+}
+
+/* Form Styles */
+.form {
+    padding: 1rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.input,
+.textarea-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.textarea-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Status Styles */
+.status-select {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.status-dropdown {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-dropdown li {
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.status-dropdown li:hover {
+    background: #f7fafc;
+}
+
+/* Utility Classes */
+.hide {
+    display: none !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Color Classes */
+.pink-background {
+    background-color: #ff69b4;
+}
+
+.blue-background {
+    background-color: #4299e1;
+}
+
+.green-background {
+    background-color: #48bb78;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    transform: translateY(150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification.show {
+    transform: translateY(0);
+}
+
+/* Task List Styles */
+.tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    margin-bottom: 0.5rem;
+}
+
+.task-button {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.task-button:hover {
+    background: #f7fafc;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.task-due-date {
+    color: #718096;
+    font-size: 0.875rem;
+}
+
+/* View Options */
+.view-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.view-option {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.view-option.active {
+    background: #4299e1;
+    color: white;
+    border-color: #4299e1;
+}
